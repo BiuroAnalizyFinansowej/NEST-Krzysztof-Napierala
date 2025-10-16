@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiążąca Oferta Finansowania dla Pana Łukasza</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 77, 153, 0.1);
+            overflow: hidden;
+        }
+
+        .header-logo {
+            padding: 30px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .header-logo img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        .content {
+            padding: 20px 50px 40px 50px;
+        }
+
+        h1, h2, h3 {
+            color: #004d99;
+            font-weight: 700;
+        }
+        
+        .salutation {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #002d5a;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 30px;
+        }
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .key-params-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .param-card {
+            background-color: #f8faff;
+            border: 1px solid #e0e9f5;
+            border-radius: 8px;
+            padding: 20px;
+            flex-grow: 1;
+            flex-basis: 200px;
+            box-shadow: 0 4px 12px rgba(0, 77, 153, 0.05);
+        }
+        .param-label {
+            display: block;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        .param-value {
+            display: block;
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #004d99;
+        }
+
+        .offer-card {
+            background-color: #fdfdfd;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 550px;
+            margin: 20px auto;
+            box-shadow: 0 8px 25px rgba(0, 77, 153, 0.1);
+        }
+        .offer-card h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #0056b3;
+            text-align: center;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .offer-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .offer-card li {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.05em;
+        }
+        .offer-card li:last-child {
+            border-bottom: none;
+        }
+        .offer-card .label {
+            color: #555;
+        }
+        .offer-card .value {
+            font-weight: 700;
+            color: #333;
+        }
+        .offer-card .highlight-rate {
+            font-size: 2em;
+            font-weight: 700;
+            color: #004d99;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .offer-card .highlight-rate small {
+            font-size: 0.6em;
+            font-weight: 400;
+            display: block;
+            color: #555;
+        }
+        
+        .note {
+            background: #e6f7ff;
+            border-left: 5px solid #007bff;
+            padding: 20px;
+            margin: 20px 0 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .note p {
+            margin: 0;
+            font-size: 1.05em;
+        }
+        
+        .benefits {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .benefits li {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .benefits .icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 20px;
+            margin-top: 3px;
+        }
+
+        .fee-calculation {
+            background-color: #f8faff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 1px solid #e0e9f5;
+        }
+        .fee-calculation p {
+            margin: 0;
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+        .fee-calculation .fee-rate {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #28a745;
+            text-align: center;
+            display: block;
+        }
+        .fee-calculation .fee-details {
+            font-size: 1.1em;
+            margin-top: 15px;
+            border-top: 2px solid #b3e6b3;
+            padding-top: 15px;
+            text-align: center;
+        }
+        .fee-calculation strong {
+            color: #0056b3;
+        }
+        .fee-calculation small {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 25px;
+            }
+            .salutation { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            .param-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-logo">
+            <img src="baf_logo.png" alt="Logo Biuro Analizy Finansowej">
+        </div>
+        <div class="content">
+            <h1 class="salutation">Szanowny Panie Łukaszu,</h1>
+            <p>w nawiązaniu do naszych ustaleń, przesyłam finalną, wiążącą propozycję finansowania. To zwieńczenie naszych rozmów i negocjacji z bankiem. Poniższe warunki w pełni zabezpieczają Pana interesy i oferują maksymalne korzyści.</p>
+            
+            <div class="section">
+                 <div class="key-params-container">
+                    <div class="param-card">
+                        <span class="param-label">Rodzaj Finansowania</span>
+                        <span class="param-value">Kredyt Firmowy</span>
+                    </div>
+                    <div class="param-card">
+                        <span class="param-label">Kwota Finansowania</span>
+                        <span class="param-value">1 000 000 zł</span>
+                    </div>
+                    <div class="param-card">
+                        <span class="param-label">Kluczowa Korzyść</span>
+                        <span class="param-value">Brak Zabezpieczeń Rzeczowych</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Finalne Warunki Finansowania</h2>
+                <p>Poniżej przedstawiam ostateczne, potwierdzone warunki finansowania, które dla Pana uzyskałam.</p>
+
+                <div class="offer-card">
+                    <h3>Kluczowe Parametry Kredytu</h3>
+                    <ul>
+                        <li><span class="label">Kwota pożyczki netto:</span> <span class="value">1 000 000,00 zł</span></li>
+                        <li><span class="label">Prowizja bankowa:</span> <span class="value">25 000,00 zł</span></li>
+                        <li><span class="label">Kwota brutto (do spłaty):</span> <span class="value">1 025 000,00 zł</span></li>
+                        <li><span class="label"><strong>Kwota do dyspozycji:</strong></span> <span class="value"><strong>975 000,00 zł</strong></span></li>
+                        <li><span class="label">Okres:</span> <span class="value">120 rat (10 lat)</span></li>
+                        <li><span class="label">Oprocentowanie:</span> <span class="value">7,31% (stała marża 2,5% + WIBOR 1M)</span></li>
+                    </ul>
+                    <div class="highlight-rate">
+                        12 028,19 zł
+                        <small>Miesięczna rata</small>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <p><strong>Ważne:</strong> Kwota do dyspozycji zostanie pomniejszona o kapitał pozostały do spłaty z tytułu konsolidowanych kredytów w Alior Banku, co pozwoli Panu uprościć swoje finanse i zarządzać jednym, korzystniejszym zobowiązaniem.</p>
+                </div>
+            </div>
+            
+             <div class="section">
+                <h2>Zabezpieczenie Kredytu</h2>
+                <p>Jedynym zabezpieczeniem kredytu jest gwarancja z Banku Gospodarstwa Krajowego (BGK), którą podpisuje Pan wraz z umową. Jest to obecnie standardowa i naturalna forma zabezpieczenia stosowana w niemal każdym kredycie firmowym, która zastępuje potrzebę obciążania Pana prywatnego majątku.</p>
+            </div>
+
+            <div class="section">
+                <h2>Podsumowanie Kluczowych Korzyści</h2>
+                <ul class="benefits">
+                    <li>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/lock--v1.png" alt="Bezpieczeństwo">
+                        <div><strong>Pełne bezpieczeństwo Pana nieruchomości:</strong> Finansowanie jest przyznane bez wymogu zabezpieczenia hipotecznego. Pana majątek prywatny i firmowy pozostaje w 100% wolny od obciążeń.</div>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/get-cash.png" alt="Oszczędność">
+                        <div><strong>Oszczędność i brak ukrytych kosztów:</strong> Oferta nie wymaga zakupu żadnych dodatkowych, obowiązkowych ubezpieczeń. Oznacza to niższą ratę i realne oszczędności w całym okresie kredytowania.</div>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/approve.png" alt="Transparentność">
+                        <div><strong>Transparentność i proste zasady:</strong> Umowa pozbawiona jest opłat kwartalnych czy administracyjnych. Płaci Pan wyłącznie ratę odsetkowo-kapitałową, co gwarantuje pełną przewidywalność kosztów.</div>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/money-circulation.png" alt="Elastyczność">
+                        <div><strong>Pełna elastyczność spłaty:</strong> Ma Pan zagwarantowaną możliwość bezpłatnej nadpłaty i wcześniejszej, całkowitej spłaty kredytu w dowolnym momencie. To znaczący atut, ponieważ w większości kredytów firmowych w innych bankach taka operacja wiąże się z dodatkowymi prowizjami.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Wynagrodzenie za Doradztwo</h2>
+                <p>Zgodnie z naszymi wcześniejszymi ustaleniami, wynagrodzenie za pomyślne pozyskanie finansowania to opłata za sukces, płatna dopiero po uruchomieniu środków przez bank.</p>
+                <div class="fee-calculation">
+                    <p>Wspólnie ustalona opłata za sukces:</p>
+                    <span class="fee-rate">2,5%</span>
+                    <div class="fee-details">
+                        <p>Kwota wynagrodzenia: <strong>25 000,00 zł</strong></p>
+                    </div>
+                    <small>Płatne na podstawie faktury VAT po otrzymaniu przez Pana środków z banku.</small>
+                </div>
+            </div>
+            
+            <p>Panie Łukaszu, wszystkie warunki są już finalnie zatwierdzone. Proszę o informację, jakie terminy w najbliższych dniach pasowałyby Panu na podpisanie umowy w oddziale banku ING.</p>
+        </div>
+    </div>
+
+</body>
+</html>
