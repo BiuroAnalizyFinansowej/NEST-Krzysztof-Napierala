@@ -1,1 +1,1 @@
-# ING-Michalik-Lukasz
+# NEST - Krzysztof Napierała
