@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiążąca Oferta Finansowania dla Pana Łukasza</title>
+    <title>Wiążąca Oferta Finansowania dla Pana Krzysztofa</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
@@ -105,6 +105,14 @@
             font-weight: 700;
             color: #004d99;
         }
+        .param-sub {
+            display: block;
+            font-size: 0.5em;
+            font-weight: 400;
+            margin-top: 5px;
+            color: #666;
+            line-height: 1.2;
+        }
 
         .offer-card {
             background-color: #fdfdfd;
@@ -141,10 +149,13 @@
         }
         .offer-card .label {
             color: #555;
+            flex: 1;
         }
         .offer-card .value {
             font-weight: 700;
             color: #333;
+            text-align: right;
+            flex: 1;
         }
         .offer-card .highlight-rate {
             font-size: 2em;
@@ -156,10 +167,11 @@
             border-top: 1px solid #eee;
         }
         .offer-card .highlight-rate small {
-            font-size: 0.6em;
+            font-size: 0.55em;
             font-weight: 400;
             display: block;
             color: #555;
+            margin-top: 5px;
         }
         
         .note {
@@ -247,92 +259,103 @@
             <img src="baf_logo.png" alt="Logo Biuro Analizy Finansowej">
         </div>
         <div class="content">
-            <h1 class="salutation">Szanowny Panie Łukaszu,</h1>
-            <p>w nawiązaniu do naszych ustaleń, przesyłam finalną, wiążącą propozycję finansowania. To zwieńczenie naszych rozmów i negocjacji z bankiem. Poniższe warunki w pełni zabezpieczają Pana interesy i oferują maksymalne korzyści.</p>
+            <h1 class="salutation">Panie Krzysztofie,</h1>
+            <p>w nawiązaniu do naszych ustaleń, przesyłam finalną propozycję finansowania. Wynegocjowałem wyjątkowo korzystny układ, który nie tylko porządkuje obecne zobowiązania, ale zapewnia także solidny zastrzyk nowej gotówki na preferencyjnych warunkach.</p>
             
             <div class="section">
                  <div class="key-params-container">
                     <div class="param-card">
                         <span class="param-label">Rodzaj Finansowania</span>
-                        <span class="param-value">Kredyt Firmowy</span>
+                        <span class="param-value">Konsolidacja + Gotówka</span>
                     </div>
                     <div class="param-card">
-                        <span class="param-label">Kwota Finansowania</span>
-                        <span class="param-value">983 000 zł</span>
+                        <span class="param-label">Łączna Kwota Netto</span>
+                        <span class="param-value">297 248 PLN</span>
                     </div>
                     <div class="param-card">
-                        <span class="param-label">Kluczowa Korzyść</span>
-                        <span class="param-value">Brak Zabezpieczeń Rzeczowych</span>
+                        <span class="param-label">Atut Oferty</span>
+                        <span class="param-value">
+                            Oprocentowanie Stałe 8,24%
+                            <span class="param-sub">przez pierwsze 48 miesięcy</span>
+                        </span>
                     </div>
                 </div>
             </div>
 
             <div class="section">
                 <h2>Finalne Warunki Finansowania</h2>
-                <p>Poniżej przedstawiam ostateczne, potwierdzone warunki finansowania, które dla Pana uzyskałam.</p>
+                <p>Poniżej przedstawiam ostateczne parametry kredytu. Uzyskałem oprocentowanie znacznie niższe od rynkowego standardu oraz zredukowałem prowizje.</p>
 
                 <div class="offer-card">
                     <h3>Kluczowe Parametry Kredytu</h3>
                     <ul>
-                        <li><span class="label">Kwota przyznana netto:</span> <span class="value">983.000,00 PLN</span></li>
-                        <li><span class="label">Prowizja bankowa:</span> <span class="value">24.575,00 PLN</span></li>
-                        <li><span class="label">Kwota brutto (do spłaty):</span> <span class="value">1.007.575,00 PLN</span></li>
-                        <li><span class="label"><strong>Kwota do dyspozycji:</strong></span> <span class="value"><strong>958.425,00 PLN</strong></span></li>
-                        <li><span class="label">Okres kredytowania:</span> <span class="value">120 mies. (10 lat)</span></li>
-                        <li><span class="label">Oprocentowanie:</span> <span class="value">7,31% (stała marża 2,5% + WIBOR 1M)</span></li>
+                        <li><span class="label"><strong>Kwota netto:</strong></span> <span class="value"><strong>297.248,00 PLN</strong></span></li>
+                        <li><span class="label" style="font-size: 0.9em; padding-left: 10px;">- w tym nowe środki:</span> <span class="value" style="font-size: 0.9em;">61.989,82 PLN</span></li>
+                        <li><span class="label" style="font-size: 0.9em; padding-left: 10px;">- konsolidacja kredytu PKO BP:</span> <span class="value" style="font-size: 0.9em;">190.635,59 PLN</span></li>
+                        <li><span class="label" style="font-size: 0.9em; padding-left: 10px;">- spłata limitu w PKO BP:</span> <span class="value" style="font-size: 0.9em;">44.722,60 PLN</span></li>
+                        <li><span class="label">Prowizja bankowa za uruchomienie:</span> <span class="value">1.860,00 PLN</span></li>
+                        <li><span class="label">Koszt gwarancji BGK:</span> <span class="value" style="font-size: 0.9em;">891,74 PLN (płatne raz w roku przez 5 lat)</span></li>
+                        <li><span class="label">Okres kredytowania:</span> <span class="value">96 mies. (8 lat)</span></li>
+                        <li><span class="label">Oprocentowanie (48 m-cy):</span> <span class="value">Stałe <strong>8,24%</strong></span></li>
+                        <li><span class="label">Oprocentowanie (po 48 m-cach):</span> <span class="value">WIBOR 3M + marża 4,49%</span></li>
                     </ul>
                     <div class="highlight-rate">
-                        11.860,42 PLN
-                        <small>Miesięczna rata</small>
+                        ok. 4.310 PLN
+                        <small>Szacowana miesięczna rata (lub nieco mniejsza)</small>
                     </div>
                 </div>
 
                 <div class="note">
-                    <p><strong>Ważne:</strong> Kwota do dyspozycji zostanie pomniejszona o kapitał pozostały do spłaty z tytułu konsolidowanych kredytów w Alior Banku, co pozwoli Panu uprościć swoje finanse i zarządzać jednym, korzystniejszym zobowiązaniem.</p>
+                    <p><strong>Bonus:</strong> Od konsolidowanej kwoty (zobowiązania w PKO BP) otrzyma Pan <strong>2% zwrotu (Cashback)</strong> bezpośrednio od banku.</p>
                 </div>
             </div>
             
              <div class="section">
-                <h2>Zabezpieczenie Kredytu</h2>
-                <p>Jedynym zabezpieczeniem kredytu jest gwarancja z Banku Gospodarstwa Krajowego (BGK), którą podpisuje Pan wraz z umową. Jest to obecnie standardowa i naturalna forma zabezpieczenia stosowana w niemal każdym kredycie firmowym, która zastępuje potrzebę obciążania Pana prywatnego majątku.</p>
+                <h2>Zabezpieczenie</h2>
+                <p>Kredyt zabezpieczony jest gwarancją BGK.</p>
             </div>
 
             <div class="section">
                 <h2>Podsumowanie Kluczowych Korzyści</h2>
                 <ul class="benefits">
                     <li>
-                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/lock--v1.png" alt="Bezpieczeństwo">
-                        <div><strong>Pełne bezpieczeństwo Pana nieruchomości:</strong> Finansowanie jest przyznane bez wymogu zabezpieczenia hipotecznego. Pana majątek prywatny i firmowy pozostaje w 100% wolny od obciążeń.</div>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/discount--v1.png" alt="Oprocentowanie">
+                        <div><strong>Stabilność i bezpieczeństwo:</strong> Zamiast zmiennego oprocentowania 10,59%, zyskuje Pan <strong>stałe oprocentowanie 8,24%</strong> przez pierwsze 4 lata. To gwarancja niższej i przewidywalnej raty.</div>
                     </li>
                     <li>
-                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/get-cash.png" alt="Oszczędność">
-                        <div><strong>Oszczędność i brak ukrytych kosztów:</strong> Oferta nie wymaga zakupu żadnych dodatkowych, obowiązkowych ubezpieczeń. Oznacza to niższą ratę i realne oszczędności w całym okresie kredytowania.</div>
+                         <img class="icon" src="https://img.icons8.com/ios/50/0056b3/unlock.png" alt="Zdolność">
+                        <div><strong>Uwolnienie zdolności kredytowej:</strong> Zamiana dotychczasowej raty (ponad 6000 zł) oraz limitu 100 000 zł (gdzie banki liczą aż 5% kwoty przyznanego limitu jako miesięczne obciążenie) na jedną, niższą ratę na poziomie ok. 4310 zł.</div>
                     </li>
                     <li>
-                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/approve.png" alt="Transparentność">
-                        <div><strong>Transparentność i proste zasady:</strong> Umowa pozbawiona jest opłat kwartalnych czy administracyjnych. Płaci Pan wyłącznie ratę odsetkowo-kapitałową, co gwarantuje pełną przewidywalność kosztów.</div>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/cash-in-hand.png" alt="Cashback">
+                        <div><strong>Premia gotówkowa:</strong> Bank wypłaci Panu 2% Cashbacku od kwoty konsolidowanych kredytów z PKO BP. To dodatkowy zysk na starcie.</div>
                     </li>
                     <li>
                         <img class="icon" src="https://img.icons8.com/ios/50/0056b3/money-circulation.png" alt="Elastyczność">
-                        <div><strong>Pełna elastyczność spłaty:</strong> Ma Pan zagwarantowaną możliwość bezpłatnej nadpłaty i wcześniejszej, całkowitej spłaty kredytu w dowolnym momencie. To znaczący atut, ponieważ w większości kredytów firmowych w innych bankach taka operacja wiąże się z dodatkowymi prowizjami.</div>
+                        <div><strong>Elastyczna nadpłata:</strong> Ma Pan możliwość bezpłatnej nadpłaty kredytu do kwoty 5000 PLN miesięcznie przez cały okres trwania umowy.</div>
+                    </li>
+                    <li>
+                        <img class="icon" src="https://img.icons8.com/ios/50/0056b3/handshake.png" alt="Negocjacje">
+                        <div><strong>Wynegocjowane warunki wyjścia:</strong> Obniżyłem prowizję za całkowitą wcześniejszą spłatę kredytu ze standardowych 5% do <strong>3%</strong>.</div>
                     </li>
                 </ul>
             </div>
 
             <div class="section">
                 <h2>Wynagrodzenie za Doradztwo</h2>
-                <p>Zgodnie z naszymi wcześniejszymi ustaleniami, wynagrodzenie za pomyślne pozyskanie finansowania to opłata za sukces, płatna dopiero po uruchomieniu środków przez bank.</p>
+                <p>Ustaliliśmy specjalne warunki rozliczenia za sukces (Success Fee), uwzględniające duży rabat od stawki standardowej.</p>
                 <div class="fee-calculation">
-                    <p>Wspólnie ustalona opłata za sukces:</p>
-                    <span class="fee-rate">2,5%</span>
+                    <p>Stawka standardowa 10% </p>
+                    <p style="font-size: 0.9em; margin-top: -10px; color: #777;">(uwzględniono 40% rabatu)</p>
+                    <span class="fee-rate" style="margin-top: 10px;">6%</span>
                     <div class="fee-details">
-                        <p>Kwota wynagrodzenia: <strong>24.575,00 PLN</strong></p>
+                        <p>Kwota wynagrodzenia: <strong>17.834,88 PLN + VAT</strong></p>
                     </div>
-                    <small>Płatne na podstawie faktury VAT po otrzymaniu przez Pana środków z banku.</small>
+                    <small>Obliczone od kwoty pozyskanych środków (297 248 PLN).</small>
                 </div>
             </div>
             
-            <p>Panie Łukaszu, wszystkie warunki są już finalnie zatwierdzone. Proszę o informację, jakie terminy w najbliższych dniach pasowałyby Panu na podpisanie umowy w oddziale banku ING.</p>
+            <p>Warunki są gotowe do zaakceptowania. Proszę o informację, kiedy możemy umówić się na dopełnienie formalności.</p>
         </div>
     </div>
 
